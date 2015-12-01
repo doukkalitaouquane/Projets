@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Younes TAOUQUANE, INSSET, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      CMSIS_AGDI.dll V1.23.1.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\Younes\Desktop\miniProjet\freertos_project\freertos_project.uvprojx
+Project File Date:  11/29/2015
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'iflash_nxp_lpcxpresso_1549'
+assembling keil_freertos_startup_lpc15xx.s...
+compiling freertos_project_main.c...
+src\freertos_project_main.c(72): warning:  #177-D: variable "LedState" was declared but never referenced
+  	bool LedState = false;
+src\freertos_project_main.c(73): warning:  #177-D: variable "i" was declared but never referenced
+  	uint32_t i;
+src\freertos_project_main.c(91): warning:  #177-D: variable "LedState" was declared but never referenced
+  	bool LedState = false;
+src\freertos_project_main.c(71): warning:  #177-D: function "vLEDTask1" was declared but never referenced
+  static void vLEDTask1(void *pvParameters) {
+src\freertos_project_main.c(90): warning:  #177-D: function "vLEDTask2" was declared but never referenced
+  static void vLEDTask2(void *pvParameters) {
+src\freertos_project_main.c: 5 warnings, 0 errors
+compiling sysinit.c...
+compiling sct_capture.c...
+src\sct_capture.c(143): warning:  #188-D: enumerated type mixed with another type
+  		Chip_SCT_EnableEventInt(
+PC_SCT0, SCT_EVT_0|SCT_EVT_1); 			/* Enable an Interrupt on the Capture Event */
+src\sct_capture.c(152): warning:  #1-D: last line of file ends without a newline
+  	
+src\sct_capture.c: 2 warnings, 0 errors
+compiling motor_control.c...
+src\sct_capture.h(33): warning:  #1-D: last line of file ends without a newline
+  #endif /* __SCT_CAPTURE_H_ */
+src\motor_control.c: 1 warning, 0 errors
+compiling i2c_slave_interrupt.c...
+src\i2c_slave_interrupt.c(246): warning:  #550-D: variable "i" was set but never used
+  uint8_t i;
+src\i2c_slave_interrupt.c(21): warning:  #177-D: variable "i2cmXferRec" was declared but never referenced
+  static I2CM_XFER_T  i2cmXferRec;
+src\i2c_slave_interrupt.c(47): warning:  #550-D: variable "curSlave" was set but never used
+  static int curSlave, addrbytes;
+src\i2c_slave_interrupt.c(171): warning:  #177-D: function "fillWorkBuff" was declared but never referenced
+  static void fillWorkBuff(uint8_t *buff, uint8_t seed)
+src\i2c_slave_interrupt.c(184): warning:  #177-D: function "compFail" was declared but never referenced
+  static bool compFail(uint8_t *ptr1, uint8_t *ptr2)
+src\i2c_slave_interrupt.c: 5 warnings, 0 errors
+compiling mainsd.c...
+compiling lpc15xx_spi_sd.c...
+compiling sd.c...
+compiling list.c...
+compiling queue.c...
+compiling tasks.c...
+compiling timers.c...
+compiling port.c...
+compiling heap_3.c...
+compiling FreeRTOSCommonHooks.c...
+linking...
+Program Size: Code=12468 RO-data=512 RW-data=148 ZI-data=7660  
+After Build - User command #1: C:\Keil_v5\\ARM\BIN\ELFDWT.EXE .\keil_output\iflash_nxp_lpcxpresso_1549\freertos_project.axf BASEADDRESS(0x00000000)
+ELFDWT - Signature Creator V1.1.0.0
+COPYRIGHT Keil - An ARM Company, Copyright (C) 2014
+*** Updated Signature over Range[32] (0x00000000 - 0x00000018): @0x0000001C = 0xFDFFDA6F
+*** Processing completed, no Errors.
+".\keil_output\iflash_nxp_lpcxpresso_1549\freertos_project.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Younes\Desktop\miniProjet\freertos_project\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\LPC1500_DFP\1.0.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

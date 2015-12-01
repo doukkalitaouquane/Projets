@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+".\keil_output\iflash_nxp_lpcxpresso_1549\freertos_project_main.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\sysinit_1.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\keil_freertos_startup_lpc15xx.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\sct_capture.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\motor_control.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\i2c_slave_interrupt.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\mainsd.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\sd.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\lpc15xx_spi_sd.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\list.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\queue.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\tasks.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\timers.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\port.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\heap_3.o"
+".\keil_output\iflash_nxp_lpcxpresso_1549\freertoscommonhooks.o"
+".\software\lpc_core\lpc_chip\chip_15xx\keil_output\chip_15xx_lib\chip_15xx_lib.lib"
+".\software\lpc_core\lpc_board\boards_15xx\nxp_lpcxpresso_1549\keil_output\board_nxp_lpcxpresso_1549.lib"
+--strict --scatter ".\keil_output\iflash_nxp_lpcxpresso_1549\freertos_project.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\keil_output\iflash_nxp_lpcxpresso_1549\freertos_project.map" -o .\keil_output\iflash_nxp_lpcxpresso_1549\freertos_project.axf
